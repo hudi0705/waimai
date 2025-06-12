@@ -1,0 +1,71 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "美食屋",
+				"navigationBarBackgroundColor": "#ff9c35",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText": "美食屋",
+				"navigationBarBackgroundColor": "#ff9c35",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/order/checkout/checkout",
+			"style" : 
+			{
+				"navigationBarTitleText": "美食屋",
+				"navigationBarBackgroundColor": "#ff9c35",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/order/orderDetail/orderDetail",
+			"style" : 
+			{
+				"navigationBarTitleText": "美食屋",
+				"navigationBarBackgroundColor": "#ff9c35",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/one/one",
+			"style" : 
+			{
+				"navigationBarTitleText": "美食屋",
+				"navigationBarBackgroundColor": "#ff9c35",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/list/list",
+			"style" : 
+			{
+			"navigationBarTitleText": "美食屋",
+			"navigationBarBackgroundColor": "#ff9c35",
+			"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+				
+			}
+		}
+		
+	
+	],
+
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

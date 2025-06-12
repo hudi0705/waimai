@@ -1,0 +1,68 @@
+
+page {
+	background-color: #f8f8f8;
+}
+.order-list-container {
+	padding: 20rpx;
+}
+.order-item-card {
+	background-color: white;
+	margin-bottom: 20rpx;
+	padding: 20rpx;
+	border-radius: 8rpx;
+	box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.order-time {
+	font-size: 28rpx;
+	color: #999;
+	margin-bottom: 15rpx;
+}
+.order-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.food-info {
+	display: flex;
+	flex-direction: column;
+}
+.food-name {
+	font-size: 30rpx;
+	color: #333;
+	margin-bottom: 5rpx;
+}
+.food-quantity {
+	font-size: 24rpx;
+	color: #999;
+	margin-bottom: 10rpx;
+}
+.food-price {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #ff9c35;
+}
+.action-buttons {
+	display: flex;
+	gap: 20rpx;
+}
+.view-details-button {
+	border: 1rpx solid #ff9c35;
+	color: #ff9c35;
+	padding: 10rpx 20rpx;
+	border-radius: 40rpx;
+	font-size: 28rpx;
+}
+.not-picked-up-button {
+	background-color: #ffc107;
+	color: white;
+	padding: 10rpx 20rpx;
+	border-radius: 40rpx;
+	font-size: 28rpx;
+}
+.picked-up-button {
+	background-color: #cccccc;
+	color: white;
+	padding: 10rpx 20rpx;
+	border-radius: 40rpx;
+	font-size: 28rpx;
+}

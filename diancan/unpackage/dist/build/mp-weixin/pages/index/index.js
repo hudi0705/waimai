@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),o={data:()=>({title:"Hello"}),onLoad(){},methods:{login(){e.index.navigateTo({url:"/pages/home/home"}),console.log("登录成功")}}};const n=e._export_sfc(o,[["render",function(o,n,t,r,a,s){return{a:e.o((e=>s.login()))}}]]);wx.createPage(n);

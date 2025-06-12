@@ -1,0 +1,159 @@
+
+page {
+	background-color: #f8f8f8;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding-bottom: 120rpx;
+	/* Space for the fixed footer */
+}
+.header-card {
+	background-color: white;
+	margin: 20rpx 15rpx;
+	padding: 30rpx;
+	border-radius: 8rpx;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.pickup-number-wrapper {
+	background-color: #ff9c35;
+	color: white;
+	padding: 20rpx;
+	border-radius: 8rpx;
+	text-align: center;
+	margin-right: 30rpx;
+}
+.pickup-label {
+	font-size: 24rpx;
+}
+.pickup-number {
+	font-size: 48rpx;
+	font-weight: bold;
+}
+.status-info {
+	flex-grow: 1;
+}
+.status-text {
+	font-size: 36rpx;
+	font-weight: bold;
+	color: #ff9c35;
+}
+.status-detail {
+	font-size: 28rpx;
+	color: #FFC107;
+	margin-top: 10rpx;
+}
+.section {
+	background-color: white;
+	margin: 20rpx 15rpx;
+	padding: 20rpx 30rpx;
+	border-radius: 8rpx;
+	box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+.section-title {
+	font-size: 32rpx;
+	font-weight: bold;
+	margin-bottom: 20rpx;
+	color: #666;
+}
+.order-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+.item-image {
+	width: 100rpx;
+	height: 100rpx;
+	margin-right: 20rpx;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.item-info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.item-name {
+	font-size: 30rpx;
+	color: #000;
+	font-weight: bold;
+}
+.item-quantity {
+	font-size: 24rpx;
+	color: #666;
+}
+.item-price {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #000;
+}
+.subtotal {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20rpx;
+	border-top: 1rpx solid #eee;
+	font-size: 32rpx;
+	font-weight: normal;
+	color: #666;
+}
+.order-info-section .info-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15rpx;
+	font-size: 28rpx;
+}
+.order-info-section .info-label {
+	color: #666;
+}
+.order-info-section .info-value {
+	color: #000;
+	font-weight: bold;
+}
+.footer-button-wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 120rpx;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+	z-index: 100;
+}
+.total-price-info {
+	display: flex;
+	align-items: baseline;
+	color: white;
+	margin-right: auto;
+	/* Push pay button to right */
+}
+.total-price {
+	font-size: 40rpx;
+	font-weight: bold;
+	margin-left: 10rpx;
+}
+.pay-button {
+	background-color: #ff9c35;
+	color: white;
+	padding: 20rpx 40rpx;
+	border-radius: 60rpx;
+	font-size: 36rpx;
+	font-weight: bold;
+}
+.pickup-message-button {
+	background-color: #ff9c35;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 20rpx 0;
+	border-radius: 60rpx;
+	font-size: 36rpx;
+	font-weight: bold;
+}

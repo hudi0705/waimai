@@ -1,0 +1,61 @@
+<view class="container">
+  <!-- 促销信息 -->
+  <view class="promotion" wx:if="{{promotion}}">
+    <view class="promotion-text">{{promotion.text}}</view>
+  </view>
+
+  <!-- 分类列表 -->
+  <view class="category-list">
+    <view class="category-item {{activeIndex === index ? 'active' : ''}}" 
+          wx:for="{{classify}}" 
+          wx:key="index"
+          bindtap="item_select"
+          data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+
+  <!-- 商品列表 -->
+  <scroll-view scroll-y class="food-list" bindscroll="onFoodScroll">
+    <view class="food-category" wx:for="{{foodList}}" wx:key="index">
+      <view class="category-title">{{item.name}}</view>
+      <view class="food-item" wx:for="{{item.food}}" wx:key="id" wx:for-item="food">
+        <image class="food-image" src="{{food.image}}" mode="aspectFill"></image>
+        <view class="food-info">
+          <view class="food-name">{{food.name}}</view>
+          <view class="food-price">¥{{food.price}}</view>
+          <view class="food-operate">
+            <view class="operate-btn" bindtap="addToCart" data-index="{{index}}" data-category_index="{{index}}">加入购物车</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 购物车 -->
+  <view class="cart-bar" wx:if="{{cartNumber > 0}}">
+    <view class="cart-info" bindtap="showCartList">
+      <view class="cart-price">¥{{cartPrice}}</view>
+      <view class="cart-number">{{cartNumber}}件</view>
+    </view>
+  </view>
+
+  <!-- 购物车详情 -->
+  <view class="cart-detail" wx:if="{{showCart}}">
+    <view class="cart-header">
+      <text>购物车</text>
+      <text class="clear-btn" bindtap="cartClear">清空</text>
+    </view>
+    <view class="cart-list">
+      <view class="cart-item" wx:for="{{cartList}}" wx:key="id">
+        <view class="item-name">{{item.name}}</view>
+        <view class="item-price">¥{{item.price}}</view>
+        <view class="item-operate">
+          <text class="operate-btn" bindtap="cartNumberDec" data-id="{{index}}">-</text>
+          <text class="item-number">{{item.number}}</text>
+          <text class="operate-btn" bindtap="cartNumberAdd" data-id="{{index}}">+</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

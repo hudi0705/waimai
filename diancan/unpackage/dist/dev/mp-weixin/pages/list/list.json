@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "美食屋",
+  "navigationBarBackgroundColor": "#ff9c35",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {}
+}

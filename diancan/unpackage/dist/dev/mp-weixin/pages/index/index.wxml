@@ -1,0 +1,1 @@
+<view class="content"><button class="button" bindtap="{{a}}">点击开启点餐之旅——></button></view><view class="tabbar"><view>首页</view><view bindtap="{{b}}">订单</view><view>我的</view></view>
